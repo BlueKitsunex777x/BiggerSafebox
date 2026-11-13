@@ -27,6 +27,7 @@ namespace BlockStoryMod
 
         private void Awake()
         {
+            if (!BSMKCheck.Passed(this)) return;   // added: only runs on the real BSMK Core
             try { new Harmony("com.BlueKitsunex777x.blockstory.biggersafebox").PatchAll(); L.Info("loaded, safebox " + Columns + "x" + Rows); }
             catch (Exception e) { L.Err("PatchAll", e); }
 
