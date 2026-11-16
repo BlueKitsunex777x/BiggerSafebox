@@ -27,6 +27,8 @@ namespace BlockStoryMod
 
         private void Awake()
         {
+            if (!BSMKCheck.Passed(this)) return;
+            
             try { new Harmony("com.BlueKitsunex777x.blockstory.biggersafebox").PatchAll(); L.Info("loaded, safebox " + Columns + "x" + Rows); }
             catch (Exception e) { L.Err("PatchAll", e); }
 
