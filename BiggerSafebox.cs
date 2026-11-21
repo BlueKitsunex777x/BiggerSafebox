@@ -11,7 +11,7 @@ using BlockStoryMultiplayer;
 using UnityEngine;
 using BlockStoryMod;
 
-[BepInPlugin("com.BlueKitsunex777x.blockstory.biggersafebox", "Bigger Safebox", "1.1.0")]
+[BepInPlugin("com.BlueKitsunex777x.blockstory.biggersafebox", "Bigger Safebox", "1.1.1")]
 [BepInDependency(Core.Guid)]
 public class SafeboxSizePlugin : BaseUnityPlugin
 {
